@@ -21,15 +21,67 @@ header {
     width: 100%;
     height: 90vh;
     border: 2px solid grey;
-}
-#users{
-    width: 60%;
-    height: 5vh;
-    background-color:greenyellow;
-    position: relative;
-    left: 20%;
-    top: 2%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+}
+#users{
+    width: 30%;
+    height: 60vh;
+    background-color:black;
+    position: relative;
+    top: 5%;
+    color: white;
+    font-size: 30px;
+}
+#cars {
+    width: 30%;
+    height: 60vh;
+    background-color:black;
+    position: relative;
+    top: 5%;
+    color: white;
+    font-size: 30px;
+}
+#registors{
+    width: 40%;
+    height: 60vh;
+    background-color:black;
+    position: relative;
+    top: 5%;
+    color: white;
+    font-size: 30px;
+}
+.userLogin{
+    font-size: 20px;
+    padding-top: 100px;
+    padding-left: 80px;
+}
+
+.block{
+    width: 80%;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 15px;
+    padding-left: 80px;
+    background-color: grey;
+    margin-left: 10%;
+}
+.text-green {
+    color: greenyellow;
+    padding-right: 10px;
+}
+.text-orange{
+    color: orange;
+    padding-left: 10px;
+}
+.block_q{
+    width: 80%;
+    height: 4vh;
+    padding-left: 60px;
+    font-size: 15px;
+    background-color: grey;
+    margin-left: 10%;
 }

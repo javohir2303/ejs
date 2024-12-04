@@ -8,7 +8,67 @@
 </head>
 <body>
     <header>Database</header>
-
-    <div class="userData"></div>
+    <div class="userData">
+    <% if(login_username && login_password){ %>
+        <div id="users">
+            <p style="padding-left: 40%;">Login data</p>
+            <p class="userLogin">
+                <div class="block_q">{</div>
+                <div class="block">
+                    <p class="text-green">"username"</p> : <p class="text-orange">"<%= login_username %>"</p>
+                </div>
+                <div class="block">
+                    <p class="text-green">"password"</p> : <p class="text-orange">"<%= login_password %>"</p>
+                </div>
+                <div class="block_q">}</div>
+                <p style="padding-left: 30%; padding-top: 20%; font-size: 15px;">Malumot databasega saqlandi</p>
+            </p>
+        </div>
+        <% } %>
+        
+        <% if(car && price && year){ %>
+        <div id="cars">
+            <p style="padding-left: 40%;">Car data</p>
+            <div class="userLogin">
+                <div class="block_q">{</div>
+                <div class="block">
+                    <p class="text-green">"car-name"</p> : <p class="text-orange">"<%= car %>"</p>
+                </div>
+                <div class="block">
+                    <p class="text-green">"price"</p> : <p class="text-orange">"<%= price %>"</p>
+                </div>
+                <div class="block">
+                    <p class="text-green">"year"</p> : <p class="text-orange">"<%= year %>"</p>
+                </div>
+                <div class="block_q">}</div>
+                <p style="padding-left: 12%; padding-top: 20%; font-size: 15px;">Malumot databasega saqlandi</p>
+            </div>
+        </div>
+        <% } %>
+        
+        <% if(email && username && password && confrim_password) { %>
+        <div id="registors">
+            <p style="padding-left: 40%;">Registor data</p>
+            <div class="userLogin">
+                <div class="block_q">{</div>
+                <div class="block">
+                    <p class="text-green">"email"</p> : <p class="text-orange">"<%= email %>"</p>
+                </div>
+                <div class="block">
+                    <p class="text-green">"username"</p> : <p class="text-orange">"<%= username %>"</p>
+                </div>
+                <div class="block">
+                    <p class="text-green">"password"</p> : <p class="text-orange">"<%= password %>"</p>
+                </div>
+                <div class="block">
+                    <p class="text-green">"confirm-password"</p> : <p class="text-orange">"<%= confrim_password %>"</p>
+                </div>
+                <div class="block_q">}</div>
+                <p style="padding-left: 30%; padding-top: 20%; font-size: 15px;">Malumot databasega saqlandi</p>
+            </div>
+        </div>
+        <% } %>
+        
+    </div>
 </body>
 </html>
